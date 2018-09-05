@@ -7,5 +7,5 @@
 package threesolid;
 
 interface IFeedable {
-    void eat();
+	void eat();
 }

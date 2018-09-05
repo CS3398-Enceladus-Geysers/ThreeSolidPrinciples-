@@ -7,6 +7,5 @@
 package threesolid;
 
 interface IWorkable {
-    void work();
+	void work();
 }
-
