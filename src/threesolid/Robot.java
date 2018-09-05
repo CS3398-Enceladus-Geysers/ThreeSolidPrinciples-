@@ -5,6 +5,9 @@
 // Worker or Superworker.  This applies the Single Responsibility principal.  
 // We have also applied the Open Close principal by separating the class.  We can add on to the existing code 
 // without modifying it.  
+// The integration-segregation principal is also used because of our decision to separate the interfaces.  The Robot class
+// does require the IFeedable interface so by applying the integration-segragation principal, Robot was
+// not forced to implement interfaces they don't use.  
 
 package threesolid;
 
