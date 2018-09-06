@@ -1,3 +1,4 @@
+
 // Maria F Jaramillo
 // Open Close Principle = By creating a new class we made it more manageable 
 // by creating more classes instead of adding functions.
@@ -17,3 +18,4 @@ public class SuperWorker implements IWorkable, IFeedable {
 		//.... eating in launch break
 	}
 }
+
