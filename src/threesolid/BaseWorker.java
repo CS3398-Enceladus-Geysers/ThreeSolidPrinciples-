@@ -3,6 +3,6 @@ package threesolid;
 public class BaseWorker implements IWorkable {
 	
 	public void work() {
-		// ....working
+		System.out.format("Working...\n");
 	}
 }
