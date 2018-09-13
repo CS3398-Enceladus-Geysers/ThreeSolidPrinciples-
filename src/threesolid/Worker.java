@@ -1,4 +1,4 @@
-// Laura Rice
+
 // We have separated the Worker class so that it has its own java file.  
 // As we extend this class, the functions of Worker will differ from those of Robot and Superworker, so 
 // creating Worker as a separate class will allow a user to add more functionality to the code without affecting
@@ -9,7 +9,7 @@
 
 package threesolid;
 
-public class Worker implements IWorkable, IFeedable {
+public class Worker extends BaseWorker implements  IFeedable {
 
 	public void work() {
 		// ....working
