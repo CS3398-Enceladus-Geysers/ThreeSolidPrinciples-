@@ -21,3 +21,22 @@ class Manager {
 		worker.work();
 	}
 }
+
+class ProjectManager extends Manager{
+	public void schedulework(){
+		System.out.format("Scheduling work...\n");
+	}
+
+}
+
+
+class ProductManager extends Manager{
+	
+	public void defineproduct(){
+		System.out.format("Defining product...\n");
+	
+	}
+
+
+}
+
