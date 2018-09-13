@@ -7,5 +7,5 @@
 package threesolid;
 
 interface IEat {
-	void eat();
+	public void eat();
 }

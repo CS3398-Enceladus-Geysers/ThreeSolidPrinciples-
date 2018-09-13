@@ -1,5 +1,5 @@
 package threesolid;
 
 interface ISick {
-	void sick();
+	public void sick();
 }
