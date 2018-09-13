@@ -8,7 +8,7 @@
 // assigning the functions that corresponds to each class.
 package threesolid;
 
-public class SuperWorker implements IWorkable, IFeedable {
+public class SuperWorker extends BaseWorker implements IFeedable {
 
 	public void work() {
 		// ....working

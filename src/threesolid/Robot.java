@@ -1,4 +1,4 @@
-// Laura Rice
+
 // We have separated the Robot class so that it has its own java file.  
 // As we extend this class, the functions of Robot will differ from those of Worker and Superworker, so 
 // creating Robot as a separate class will allow a user to add more functionality to the code without affecting
@@ -11,7 +11,7 @@
 
 package threesolid;
 
-public class Robot implements IWorkable {
+public class Robot extends BaseWorker {
 
 	public void work() {
 		//.....only working
