@@ -8,15 +8,21 @@
 // assigning the functions that corresponds to each class.
 package threesolid;
 
-public class SuperWorker extends BaseWorker implements IFeedable {
+public class SuperWorker extends BaseWorker implements IFeedable, IEat, ISick {
 
 	@Override
 	public void work() {
-		System.out.format("Working Super hard\n");
+		System.out.format("Working super hard\n");
 	}
 
+	@Override
 	public void eat() {
-		//.... eating in launch break
+		System.out.format("Eating super foods\n");
+		// .... eating in launch break
+	}
+
+	@Override
+	public void sick() {
+		System.out.format("Being super sick.\n");
 	}
 }
-

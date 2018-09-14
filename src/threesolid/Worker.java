@@ -6,12 +6,17 @@
 // We have also applied the Open Close principal by separating the class.  We can add on to the existing code 
 // without modifying it.  
 
-
 package threesolid;
 
-public class Worker extends BaseWorker implements  IFeedable {
+public class Worker extends BaseWorker implements IFeedable, IEat, ISick {
 
+	@Override
 	public void eat() {
-		//.... eating in launch break
+		System.out.format("Typical worker eating\n");
+	}
+
+	@Override
+	public void sick() {
+		System.out.format("Regular worker flu\n");
 	}
 }

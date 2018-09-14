@@ -11,10 +11,14 @@
 
 package threesolid;
 
-public class Robot extends BaseWorker {
-
+public class Robot extends BaseWorker implements IReboot {
 	@Override
 	public void work() {
 		System.out.format("Working Machine\n");
+	}
+
+	@Override
+	public void reboot() {
+		System.out.format("Machine rebooting\n");
 	}
 }

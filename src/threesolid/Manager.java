@@ -14,29 +14,27 @@ class Manager {
 	IWorkable worker;
 
 	public void setWorker(IWorkable w) {
+		System.out.format("Manager is setting a worker.\n");
 		worker = w;
 	}
 
 	public void manage() {
+		System.out.format("Manager is managing a worker.\n");
 		worker.work();
 	}
 }
 
-class ProjectManager extends Manager{
-	public void schedulework(){
+class ProjectManager extends Manager {
+	public void schedulework() {
 		System.out.format("Scheduling work...\n");
 	}
 
 }
 
-
-class ProductManager extends Manager{
-	
-	public void defineproduct(){
+class ProductManager extends Manager {
+	public void defineproduct() {
 		System.out.format("Defining product...\n");
-	
+
 	}
 
-
 }
-
