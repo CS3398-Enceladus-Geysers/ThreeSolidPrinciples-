@@ -18,16 +18,31 @@ public class Main {
 	public static Manager tsManager = new Manager();
 
 	public static void main(String[] args) {
-		try {
-			System.out.format("Starting ... \n");
-		} catch (Exception main_except) {
-			main_except.printStackTrace();
-		}
-		try {
-			System.out.format("Stopping ... \n");
-		} catch (Exception main_except) {
-			main_except.printStackTrace();
-		}
+		System.out.format("Starting ... \n");
+		Manager bossman = new Manager();
+		Robot robo = new Robot();
+		SuperWorker chad = new SuperWorker();
+		TempWorker pete = new TempWorker();
+		Worker alice = new Worker();
+		System.out.format("\nManager Methods:\n");
+		bossman.setWorker(robo);
+		bossman.manage();
+		System.out.format("\nRobot Methods:\n");
+		robo.work();
+		robo.reboot();
+		System.out.format("\nSuperWorker Methods:\n");
+		chad.eat();
+		chad.sick();
+		chad.work();
+		System.out.format("\nTempWorker Methods:\n");
+		pete.eat();
+		pete.sick();
+		pete.work();
+		System.out.format("\nWorker Methods:\n");
+		alice.eat();
+		alice.sick();
+		alice.work();
+		System.out.format("\nStopping ... \n");
 		System.exit(0);
 	}
 }

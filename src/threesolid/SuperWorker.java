@@ -23,6 +23,6 @@ public class SuperWorker extends BaseWorker implements IFeedable, IEat, ISick {
 
 	@Override
 	public void sick() {
-		System.out.format("Being super sick.\n");
+		System.out.format("Being super sick\n");
 	}
 }

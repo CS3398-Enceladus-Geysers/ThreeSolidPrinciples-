@@ -14,12 +14,12 @@ class Manager {
 	IWorkable worker;
 
 	public void setWorker(IWorkable w) {
-		System.out.format("Manager is setting a worker.\n");
+		System.out.format("Setting a worker\n");
 		worker = w;
 	}
 
 	public void manage() {
-		System.out.format("Manager is managing a worker.\n");
+		System.out.format("Managing a worker\n");
 		worker.work();
 	}
 }
