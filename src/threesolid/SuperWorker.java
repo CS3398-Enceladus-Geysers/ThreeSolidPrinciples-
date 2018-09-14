@@ -10,8 +10,9 @@ package threesolid;
 
 public class SuperWorker extends BaseWorker implements IFeedable {
 
+	@Override
 	public void work() {
-		// ....working
+		System.out.format("Working Super hard\n");
 	}
 
 	public void eat() {

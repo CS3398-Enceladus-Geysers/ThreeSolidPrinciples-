@@ -11,10 +11,6 @@ package threesolid;
 
 public class Worker extends BaseWorker implements  IFeedable {
 
-	public void work() {
-		// ....working
-	}
-
 	public void eat() {
 		//.... eating in launch break
 	}

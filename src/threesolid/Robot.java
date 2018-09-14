@@ -13,7 +13,8 @@ package threesolid;
 
 public class Robot extends BaseWorker {
 
+	@Override
 	public void work() {
-		//.....only working
+		System.out.format("Working Machine\n");
 	}
 }
