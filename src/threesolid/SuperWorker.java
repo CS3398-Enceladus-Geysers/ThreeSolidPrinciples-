@@ -8,7 +8,7 @@
 // assigning the functions that corresponds to each class.
 package threesolid;
 
-public class SuperWorker extends BaseWorker implements IFeedable, IEat, ISick {
+public class SuperWorker extends BaseWorker implements  IEat, ISick {
 
 	@Override
 	public void work() {

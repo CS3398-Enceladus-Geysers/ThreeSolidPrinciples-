@@ -8,7 +8,7 @@
 
 package threesolid;
 
-public class Worker extends BaseWorker implements IFeedable, IEat, ISick {
+public class Worker extends BaseWorker implements  IEat, ISick {
 
 	@Override
 	public void eat() {
