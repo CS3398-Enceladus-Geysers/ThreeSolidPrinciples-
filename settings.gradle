@@ -16,4 +16,4 @@ include 'api'
 include 'services:webservice'
 */
 /******  Change the rootProject.name to the package name you are using ******/
-rootProject.name = 'ThreeSolidMain'
+rootProject.name = 'Main'
