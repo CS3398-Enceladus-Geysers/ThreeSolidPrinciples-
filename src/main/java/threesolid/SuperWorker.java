@@ -11,8 +11,9 @@ package threesolid;
 public class SuperWorker extends BaseWorker implements  IEat, ISick {
 
 	@Override
-	public void work() {
+	public String work() {
 		System.out.format("Working super hard\n");
+		return ("Working super hard\n");
 	}
 
 	@Override

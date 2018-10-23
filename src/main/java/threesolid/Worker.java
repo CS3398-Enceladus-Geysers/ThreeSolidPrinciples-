@@ -18,5 +18,6 @@ public class Worker extends BaseWorker implements  IEat, ISick {
 	@Override
 	public void sick() {
 		System.out.format("Regular worker flu\n");
+		
 	}
 }

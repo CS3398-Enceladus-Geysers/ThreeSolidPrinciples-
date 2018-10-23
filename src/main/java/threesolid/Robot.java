@@ -13,8 +13,9 @@ package threesolid;
 
 public class Robot extends BaseWorker implements IReboot {
 	@Override
-	public void work() {
+	public String work() {
 		System.out.format("Working Machine\n");
+		return ("Working Machine\n");
 	}
 
 	@Override
