@@ -98,7 +98,7 @@ dependencies {
 }
 
 test {
-    useJUnitPlatform()
+   // useJUnitPlatform()
 }
 // end::dependencies[]
 
