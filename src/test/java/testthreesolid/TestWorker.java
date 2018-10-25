@@ -12,10 +12,14 @@ public class TestWorker {
  {
     assertEquals(w.work(),"I'm working already!", "Mismatch between test text and method text");
  }
- public void newTest<kjy>WorkerPass() {
+ @Test
+ @DisplayName("newTest<kjy>WorkerPass")
+ public void WorkerPass() {
  	 assertEquals(w.work(),"Working...\n", "Correct."); //Kristof York
  }
- public void newTest<kjy>WorkerFail() {
+ @Test
+ @DisplayName("newTest<kjy>WorkerFail")
+ public void WorkerFail() {
  	assertEquals(w.work(),"Working.. :( ", "Mismatch between test text and method text."); //Kristof York 
  }
 };
