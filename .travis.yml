@@ -1,3 +1,5 @@
 language: java
 
-script: ./gradlew build
+script: 
+chmod ugo+x ./gradlew
+./gradlew build
