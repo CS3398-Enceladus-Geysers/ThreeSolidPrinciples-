@@ -31,9 +31,11 @@ dependencies {
 }
 */
 
-// The Java plugin adds Java compilation along with testing and bundling capabilities to a project
+// The Java plugin adds Java compilation along with 
+// testing and bundling capabilities to a project
 apply plugin: 'java'
-// The Eclipse plugins generate files used by Eclipse,  making it possible to import project into Eclipse.
+// The Eclipse plugins generate files used by Eclipse,  
+// making it possible to import project into Eclipse.
 apply plugin: 'eclipse'
 //The Application plugin facilitates creating an executable JVM application. 
 apply plugin: 'application'
@@ -49,15 +51,18 @@ sourceSets {
         resources { srcDir 'test' }
     }
 }
+//////////////////////////////////////////////////////////////
 //
 //      Change this assignment to reflect your own project 
 //      mainClassName = 'package.mainClassName'
 //
-//
 mainClassName = 'threesolid.Main'
+//
+/////////////////////////////////////////////////////////////
 
 // tag::repositories[]
-// Usually, a Java project will have some dependencies on external JAR files.  Gradle searches here for them
+// Usually, a Java project will have some dependencies on external JAR files.  
+// Gradle searches here for them
 repositories {
     mavenCentral()
     jcenter()
@@ -66,9 +71,7 @@ repositories {
 
 // tag::jar[]
 // 
-//
 //   Pick a baseName you like and assign it.
-//
 //
 jar {
     baseName = 'dl-three-solid-main'
@@ -80,30 +83,35 @@ jar {
 sourceCompatibility = 1.7
 targetCompatibility = 1.7
 
-// joda-time provides the time stamping used in HelloWorld.java
-// junit is to run the TestGreeter.java and others
+
+
 dependencies {
+    // joda-time provides the time stamping. It allows statements like the following: 
+    //    LocalTime currentTime = new LocalTime();
+    //    System.out.println("The local time is: " + currentTime);
     compile "joda-time:joda-time:2.2"
-    compile "org.junit.jupiter:junit-jupiter-api:5.3.0-M1"
- //   testCompile 'junit:junit:4.12'
-    testCompile "org.junit.jupiter:junit-jupiter-api:5.3.0-M1"
+    // The junit imports are used run the Junit5 tests.
+    compile "org.junit.jupiter:junit-jupiter-api:5.0.1"
+    testCompile "org.junit.jupiter:junit-jupiter-api:5.0.1"
 
     testImplementation(
-            'org.junit.jupiter:junit-jupiter-api:5.3.0-M1'
+            'org.junit.jupiter:junit-jupiter-api:5.1.0'
     )
     testRuntimeOnly(
-            'org.junit.jupiter:junit-jupiter-engine:5.3.0-M1',
-            'org.junit.vintage:junit-vintage-engine:5.3.0-M1'
+            'org.junit.jupiter:junit-jupiter-engine:5.1.0',
+            'org.junit.vintage:junit-vintage-engine:5.1.0'
     )
 }
-
-test {
-   // useJUnitPlatform()
-}
 // end::dependencies[]
+test {
+    useJUnitPlatform()
+}
 
 // tag::wrapper[]
 task wrapper(type: Wrapper) {
-    gradleVersion = '4.6'
+    gradleVersion = '4.10.2'
 }
 // end::wrapper[]
+
+
+

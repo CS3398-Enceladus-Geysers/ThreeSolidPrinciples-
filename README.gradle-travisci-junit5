@@ -1,0 +1,25 @@
+# Gradle 4.10.2 and Junit5 Readme for Travis CI and Beyond
+This distribution contains the following:
+
+build.gradle *
+settings.gradle *
+gradlew
+gradlew.bat
+gradle/wrapper/gradle-wrapper.properties   //This may be deprecated in Gradle 5.0
+gradle/wrapper/gradle-wrapper.jar
+
+You must customized the following.   The examples shown need to be changed to
+conform with your project particulars.
+
+build.gradle:
+	mainClassName = '<packagename.FileNameWithMainFunction>'
+	jar {
+    baseName = 'dl-pick-jar-file-name'
+    version =  'pick-a-version-number in this format: x.y.z'
+	}
+
+settings.gradle: 
+	rootProject.name = 'FileNameWithMainFunction'
+
+
+
