@@ -20,6 +20,6 @@ public class TestWorker {
  @Test
  @DisplayName("newTest<kjy>WorkerFail")
  public void WorkerFail() {
- 	assertEquals(w.work(),"Working.. :( ", "Mismatch between test text and method text."); //Kristof York 
+ 	assertEquals(w.work(),"Maybe working.. ;) ", "Mismatch between test text and method text."); //Kristof York 
  }
 };
