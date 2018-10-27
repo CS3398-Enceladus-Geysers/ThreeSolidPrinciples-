@@ -12,14 +12,4 @@ public class TestWorker {
  public void WorkerPass() {
  	 assertEquals(w.work(),"Working...\n", "Correct."); //Kristof York
  }
-
-  
-	private Worker w = new Worker();
-	@Test
-	@DisplayName("Work Method Test")
-	public void testWorkMethod()
-	{
-		assertEquals(w.work(),"I'm working already!", "Mismatch between test text and method text");
-	}
-
 };
