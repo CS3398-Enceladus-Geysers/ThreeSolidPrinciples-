@@ -26,9 +26,10 @@ public class TestWorker {
 	 assertTrue(calledOut(true),"Worker called out sick.");  //Laura Rice	 
  }
  
+ /*
  @Test
  @DisplayName("newTest<lmr>WorkerFail()")
  public void calledOutTest() {
 	 assertTrue(calledOut(2),"Incompatible Types, calledOut test failed."); //Laura Rice
- }
+ }*/
 };
