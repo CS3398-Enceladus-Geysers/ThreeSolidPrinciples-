@@ -23,12 +23,12 @@ public class TestWorker {
  @Test
  @DisplayName("newTest<lmr>WorkerPass")
  public void calledOutTest(){
-	 assertTrue(w.calledOut(true),"Worker called out sick.");  //Laura Rice	 
+	 assertTrue(calledOut(true),"Worker called out sick.");  //Laura Rice	 
  }
  
  @Test
  @DisplayName("newTest<lmr>WorkerFail()")
  public void calledOutTest() {
-	 assertTrue(w.calledOut(),"Called out test failed."); //Laura Rice
+	 assertTrue(calledOut(),"Called out test failed."); //Laura Rice
  }
 };
