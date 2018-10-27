@@ -12,7 +12,7 @@ public class TestWorker {
  	 assertEquals(w.work(),"Working...\n", "Correct."); //Kristof York
  }
  
- public boolean calledOut(bool hasFlu){
+ public boolean calledOut(boolean hasFlu){ //Laura Rice
 	 boolean result = false;
 	 if(hasFlu){
 		 return true;
@@ -25,10 +25,10 @@ public class TestWorker {
  public void calledOutTest(){
 	 assertTrue(calledOut(true),"Worker called out sick.");  //Laura Rice	 
  }
- /*
+ 
  @Test
  @DisplayName("newTest<lmr>WorkerFail()")
  public void calledOutTest() {
 	 assertTrue(calledOut(2),"Called out test failed."); //Laura Rice
- }*/
+ }
 };
