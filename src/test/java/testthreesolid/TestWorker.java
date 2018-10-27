@@ -29,6 +29,6 @@ public class TestWorker {
  @Test
  @DisplayName("newTest<lmr>WorkerFail()")
  public void calledOutTest() {
-	 assertTrue(calledOut(),"Called out test failed."); //Laura Rice
+	 assertTrue(calledOut(2),"Called out test failed."); //Laura Rice
  }
 };
