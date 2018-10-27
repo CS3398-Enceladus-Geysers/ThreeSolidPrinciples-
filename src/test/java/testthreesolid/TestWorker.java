@@ -25,10 +25,10 @@ public class TestWorker {
  public void calledOutTest(){
 	 assertTrue(calledOut(true),"Worker called out sick.");  //Laura Rice	 
  }
- 
+ /*
  @Test
  @DisplayName("newTest<lmr>WorkerFail()")
  public void calledOutTest() {
 	 assertTrue(calledOut(2),"Called out test failed."); //Laura Rice
- }
+ }*/
 };
