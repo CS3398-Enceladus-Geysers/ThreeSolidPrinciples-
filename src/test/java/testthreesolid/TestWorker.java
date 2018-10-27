@@ -5,10 +5,21 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 public class TestWorker {
+
  private Worker w = new Worker();
  @Test
  @DisplayName("newTest<kjy>WorkerPass")
  public void WorkerPass() {
  	 assertEquals(w.work(),"Working...\n", "Correct."); //Kristof York
  }
+
+  
+	private Worker w = new Worker();
+	@Test
+	@DisplayName("Work Method Test")
+	public void testWorkMethod()
+	{
+		assertEquals(w.work(),"I'm working already!", "Mismatch between test text and method text");
+	}
+
 };
