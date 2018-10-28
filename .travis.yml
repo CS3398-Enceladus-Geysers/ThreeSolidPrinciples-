@@ -1,6 +1,6 @@
 language: java
 
 
-script: 
-chmod ugo+x ./gradlew
-./gradlew build
+script:
+ - chmod +x ./gradlew build //connectedCheck
+
