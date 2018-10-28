@@ -8,16 +8,13 @@
 
 package threesolid;
 
-public class Worker extends BaseWorker implements  IEat, ISick {
+public class Worker extends BaseWorker {
 
-	@Override
-	public void eat() {
-		System.out.format("Typical worker eating\n");
+	public String eat() {
+		return "Typical worker eating\n";
 	}
 
-	@Override
-	public void sick() {
-		System.out.format("Regular worker flu\n");
-		
+	public String sick() {
+		return "Regular worker flu\n";
 	}
 }
