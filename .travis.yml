@@ -2,5 +2,5 @@ language: java
 
 
 script: 
-chmod ugo+x ./gradlew
+chmod ugo+x 
 ./gradlew build
