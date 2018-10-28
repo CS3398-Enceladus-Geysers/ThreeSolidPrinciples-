@@ -4,4 +4,3 @@ language: java
 script: 
 chmod ugo+x ./gradlew
 ./gradlew build
-
