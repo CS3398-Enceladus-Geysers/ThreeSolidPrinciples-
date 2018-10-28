@@ -15,5 +15,9 @@ include 'shared'
 include 'api'
 include 'services:webservice'
 */
-/******  Change the rootProject.name to the package name you are using ******/
+
+// ===========================================================================================
+//  CHANGE THE ROOTPROJECT.NAME TO THE NAME OF THE FILE CONTAINING THE MAIN FUNCTION 
+// ===========================================================================================
+
 rootProject.name = 'Main'

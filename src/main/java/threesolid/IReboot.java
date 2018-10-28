@@ -1,5 +1,5 @@
 package threesolid;
 
 interface IReboot {
-	public void reboot();
+	public String reboot();
 }

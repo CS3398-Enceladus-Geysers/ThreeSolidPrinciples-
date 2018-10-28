@@ -19,7 +19,8 @@ public class Robot extends BaseWorker implements IReboot {
 	}
 
 	@Override
-	public void reboot() {
+	public String reboot() {
 		System.out.format("Machine rebooting\n");
+		return ("Machine rebooting\n");
 	}
 }
