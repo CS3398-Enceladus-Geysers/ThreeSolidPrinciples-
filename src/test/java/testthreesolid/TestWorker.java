@@ -27,6 +27,6 @@ public class TestWorker {
 	@Test
 	@DisplayName("Sick Method Test")
 	public void testSickMethod() {
-		assertEquals(w.sick(), "Regular worker fl", "Expected to fail");
+		assertEquals(w.sick(), "Regular worker flu\n", "Expected to pass");
 	}
 };
